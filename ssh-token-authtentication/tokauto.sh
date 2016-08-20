@@ -1,5 +1,5 @@
 #!/usr/bin/env bash
-
+#
 # Author: Anar Shamilov
 # This srcipt requires IP adresses from "iplist" file/
 # Then authomatically configure SSH token authentication for all IP addresses.
