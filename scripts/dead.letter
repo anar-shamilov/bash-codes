@@ -1,0 +1,167 @@
+
+
+
+Checking setuid files and devices:
+
+Checking negative group permissions:
+
+fbsdvm.az changes in mounted filesystems:
+--- /var/log/mount.today	2016-07-12 03:04:23.000000000 +0400
++++ /tmp/security.MPbA9yQH	2016-08-20 03:04:05.437929000 +0400
+@@ -3,4 +3,6 @@
+ /dev/md1		/usr/home/gence/ramdisk	ufs	rw		0 0
+ devfs			/dev			devfs	rw,multilabel 	0 0
+ fdescfs			/dev/fd			fdescfs	rw		0 0
++map -hosts		/net			autofs	rw		0 0
++map /etc/auto.nas	/mnt/nas		autofs	rw		0 0
+ procfs			/proc			procfs	rw		0 0
+
+Checking for uids of 0:
+root 0
+toor 0
+
+Checking for passwordless accounts:
+
+Checking login.conf permissions:
+
+fbsdvm.az ipfw denied packets:
+
+fbsdvm.az kernel log messages:
++++ /tmp/security.od18hYcv	2016-08-20 03:04:05.574043000 +0400
++ugen1.1: <0x15ad> at usbus1
++ugen0.2: <VMware> at usbus0
+
+fbsdvm.az login failures:
+
+fbsdvm.az refused connections:
+
+Checking for packages with security vulnerabilities:
+apache24-2.4.20_1
+python27-2.7.11_1
+libgcrypt-1.6.5_1
+python34-3.4.4_1
+libtasn1-4.7
+gstreamer-ffmpeg-0.10.13_4
+mysql55-server-5.5.49
+sqlite3-3.11.1
+libxslt-1.1.28_8
+tiff-4.0.6_1
+libidn-1.31
+curl-7.48.0_1
+php56-5.6.21
+isc-dhcp42-server-4.2.7
+libarchive-3.1.2_6,1
+firefox-45.0.1_3,1
+expat-2.1.0_3
+perl5-5.20.3_8
+pcre-8.38
+iperf3-3.1.2
+
+-- End of security output --
+
+
+
+Removing stale files from /var/preserve:
+
+Cleaning out old system announcements:
+
+Removing stale files from /var/rwho:
+
+Backup passwd and group files:
+fbsdvm.az passwd diffs:
+3c3
+< root:(password):0:0::0:0:Charlie &:/root:/bin/csh
+---
+> root:(password):0:0::0:0:Charlie &:/root:/usr/local/bin/bash
+
+Verifying group file syntax:
+/etc/group is fine
+
+Backing up mail aliases:
+
+Disk status:
+Filesystem    Size    Used   Avail Capacity  Mounted on
+/dev/da0p2     46G     15G     27G    37%    /
+devfs         1.0K    1.0K      0B   100%    /dev
+fdescfs       1.0K    1.0K      0B   100%    /dev/fd
+procfs        4.0K    4.0K      0B   100%    /proc
+/dev/md1      496M    8.0K    456M     0%    /usr/home/gence/ramdisk
+/dev/md0       19M     40K     17M     0%    /tmp
+
+Network interface status:
+Name    Mtu Network       Address              Ipkts Ierrs Idrop    Opkts Oerrs  Coll  Drop
+em0    1500 <Link#1>      00:0c:29:ea:c8:d2    19769     0     0    12401     0     0     0 
+em0       - 192.168.80.0  fbsdvm               18590     -     -    12264     -     -     - 
+em1    1500 <Link#2>      00:0c:29:ea:c8:dc       30     0     0       33     0     0     0 
+em1       - 10.1.1.0      10.1.1.1                 0     -     -       32     -     -     - 
+lo0   16384 <Link#3>                             211     0     0      211     0     0     0 
+lo0       - your-net      localhost              153     -     -      211     -     -     - 
+
+Local system status:
+ 3:01AM  up  6:33, 1 user, load averages: 1.07, 1.10, 1.01
+
+Mail in local queue:
+mailq: Mail queue is empty
+
+Mail in submit queue:
+mailq: Mail queue is empty
+
+Security check:
+    (output mailed separately)
+
+Checking for rejected mail hosts:
+
+Checking userland and kernel versions:
+Userland and kernel are in sync.
+
+Backing up pkgng database:
+
+
+SMART status:
+Checking health of /dev/da0: OK
+
+-- End of daily output --
+
+
+send-mail: Cannot open mailhub:25
+
+
+
+Rebuilding locate database:
+
+Rebuilding whatis database:
+
+Security check:
+    (output mailed separately)
+
+-- End of weekly output --
+
+
+
+Checking for packages with security vulnerabilities:
+Database fetched: Sat Aug 20 03:49:43 AZT 2016
+apache24-2.4.20_1
+python27-2.7.11_1
+libgcrypt-1.6.5_1
+python34-3.4.4_1
+libtasn1-4.7
+gstreamer-ffmpeg-0.10.13_4
+mysql55-server-5.5.49
+sqlite3-3.11.1
+libxslt-1.1.28_8
+tiff-4.0.6_1
+libidn-1.31
+curl-7.48.0_1
+php56-5.6.21
+isc-dhcp42-server-4.2.7
+libarchive-3.1.2_6,1
+firefox-45.0.1_3,1
+expat-2.1.0_3
+perl5-5.20.3_8
+pcre-8.38
+iperf3-3.1.2
+
+-- End of security output --
+
+
+send-mail: Cannot open mailhub:25

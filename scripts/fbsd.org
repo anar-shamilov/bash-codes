@@ -1,0 +1,14 @@
+<VirtualHost *:80>
+    ServerAdmin anar.slov@gmail.com
+    ServerName fbsd.org
+    ServerAlias www.fbsd.org
+    AcceptPathInfo On
+    DocumentRoot /usr/local/www/fbsd.org/
+    CustomLog /var/log/httpd/fbsd.org_access.log common
+    ErrorLog /var/log/httpd/fbsd.org_error.log
+    <Directory /usr/local/www/fbsd.org>
+    Options +Indexes
+    AllowOverride All
+    Require all granted
+</Directory>
+</VirtualHost>

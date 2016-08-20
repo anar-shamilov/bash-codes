@@ -1,0 +1,5 @@
+#!/usr/bin/env bash
+
+mysql -uroot -pfreebsd -e "create database jamaldb;"
+mysql -uroot -pfreebsd -e "GRANT ALL PRIVILEGES ON jamaldb.* TO 'jamaluser'@localhost IDENTIFIED BY 'freebsd' WITH GRANT OPTION;"
+mysql -uroot -pfreebsd -e "FLUSH PRIVILEGES;"

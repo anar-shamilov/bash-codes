@@ -1,0 +1,14 @@
+<VirtualHost *:80>
+    ServerAdmin anar.slov@gmail.com
+    ServerName free.az
+    ServerAlias www.free.az
+    AcceptPathInfo On
+    DocumentRoot /usr/local/www/free.az/
+    CustomLog /var/log/httpd/free.az_access.log common
+    ErrorLog /var/log/httpd/free.az_error.log
+    <Directory /usr/local/www/free.az>
+    Options +Indexes
+    AllowOverride All
+    Require all granted
+</Directory>
+</VirtualHost>

@@ -1,0 +1,6 @@
+#!/usr/bin/env bash
+
+export T=test
+./sleep1
+sleep 15
+echo $T

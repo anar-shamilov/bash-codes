@@ -1,0 +1,5 @@
+#!/usr/bin/env bash
+
+mysql -uroot -pfreebsd -e "create database dbnm;"
+mysql -uroot -pfreebsd -e "GRANT ALL PRIVILEGES ON dbnm.* TO 'dbusr'@localhost IDENTIFIED BY 'wpass' WITH GRANT OPTION;"
+mysql -uroot -pfreebsd -e "FLUSH PRIVILEGES;"

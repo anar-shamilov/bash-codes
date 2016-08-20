@@ -1,0 +1,14 @@
+<VirtualHost *:80>
+    ServerAdmin anar.slov@gmail.com
+    ServerName site
+    ServerAlias www.site
+    AcceptPathInfo On
+    DocumentRoot /usr/local/www/site/
+    CustomLog /var/log/httpd/site_access.log common
+    ErrorLog /var/log/httpd/site_error.log
+    <Directory /usr/local/www/site>
+    Options +Indexes
+    AllowOverride All
+    Require all granted
+</Directory>
+</VirtualHost>

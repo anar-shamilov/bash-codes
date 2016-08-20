@@ -1,0 +1,18 @@
+#!/usr/bin/env bash
+#echo '###Elan###'
+#echo -e "xahish edirem ip-ni daxil edesiniz \c"
+#$1="xahish edirem ip-ni daxil edesiniz \c"
+#PS3='IP: '
+#select word in "IP"
+while true;
+do
+ping -c 1  192.168.80.128 ;
+if [ $? -eq 0 ] then
+echo "Host dogrudur"
+exit 0
+
+#else  ping -c 3  IP;
+#then
+#       echo "host movcud deyil" 
+fi 
+ done

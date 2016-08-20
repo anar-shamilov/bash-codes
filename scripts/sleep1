@@ -1,0 +1,4 @@
+#!/usr/bin/env bash
+W=salam
+echo $W > sleep2
+echo $T >> sleep2
